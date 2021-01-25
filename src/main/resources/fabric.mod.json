@@ -1,35 +1,38 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "blacklight",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Blacklight",
+  "description": "Dawn breaks nevermore!",
   "authors": [
-    "Me!"
+    "Azazelthedemonlord"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/Dragonoidzero/Blacklight"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "FPC License 2.0",
+  "icon": "assets/blacklight/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.azzy.blacklight.BlacklightInit"
+    ],
+    "client": [
+      "net.azzy.blacklight.BlacklightClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "blacklight.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.17.x"
   },
   "suggests": {
     "another-mod": "*"
